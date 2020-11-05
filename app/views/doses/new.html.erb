@@ -1,6 +1,0 @@
-     <h2> Recipes </h2>
-      <%= simple_form_for [@cocktail, @dose] do |f| %>
-        <%= f.input :description %>
-        <%= f.association :ingredient, collection: Ingredient.all %>
-        <%= f.submit class: 'btn btn-primary' %>
-      <% end %>
